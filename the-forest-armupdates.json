@@ -14,7 +14,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"mkdir -p ./556450/wine-x86\"",
+        "UpdateSourceArgs": "-c \"mkdir -p ./the-forest/556450/wine-x86\"",
         "SkipOnFailure": false
     },
     {
