@@ -13,9 +13,16 @@
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://github.com/Kron4ek/Wine-Builds/releases/download/9.19/wine-9.19-staging-amd64-wow64.tar.xz",
         "UpdateSourceTarget": "./wine-x86/",
-        "PostDownloadAction": "ExtractArchive",
-        "ExtractedFolderName": "wine-9.19-staging-amd64-wow64",
-        "RenameTo": "wine-x86",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Extract Wine x86_64",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceData": "./wine-x86/wine-9.19-staging-amd64-wow64.tar.xz",
+        "UpdateSourceTarget": "./wine-x86/",
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true,
         "SkipOnFailure": false
     },
     {
