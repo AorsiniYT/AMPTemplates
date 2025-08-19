@@ -34,14 +34,6 @@
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Initialise Wine Prefix",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/usr/local/bin/box64",
-        "UpdateSourceArgs": "./the-forest/556450/wine-x86/bin/wine64 wineboot",
-        "SkipOnFailure": false
-    },
-    {
         "UpdateStageName": "Base Config Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
