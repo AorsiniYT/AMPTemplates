@@ -27,7 +27,7 @@
         "UpdateStageName": "Initialise Wine Prefix",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
-        "UpdateSourceData": "/usr/bin/box64",
+        "UpdateSourceData": "/usr/bin/local/box64",
         "UpdateSourceArgs": "./the-forest/wine-x86/bin/wine64 wineboot",
         "SkipOnFailure": false
     },
