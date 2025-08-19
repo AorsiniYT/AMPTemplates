@@ -4,7 +4,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"mkdir -p ./the-forest/wine-x86\"",
+        "UpdateSourceArgs": "-c \"mkdir -p ./wine-x86\"",
         "SkipOnFailure": false
     },
     {
@@ -12,7 +12,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://github.com/Kron4ek/Wine-Builds/releases/download/9.19/wine-9.19-staging-amd64-wow64.tar.xz",
-        "UpdateSourceTarget": "./the-forest/wine-x86/",
+        "UpdateSourceTarget": "./wine-x86/",
         "PostDownloadAction": "ExtractArchive",
         "ExtractedFolderName": "wine-9.19-staging-amd64-wow64",
         "RenameTo": "wine-x86",
@@ -23,7 +23,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/usr/bin/box64",
-        "UpdateSourceArgs": "./the-forest/wine-x86/bin/wine64 wineboot",
+        "UpdateSourceArgs": "./wine-x86/bin/wine64 wineboot",
         "SkipOnFailure": false
     },
     {
