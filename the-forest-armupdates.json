@@ -30,7 +30,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cd ./556450/wine-x86 && tar xJf wine-9.19-staging-amd64-wow64.tar.xz --strip-components=1 && rm wine-9.19-staging-amd64-wow64.tar.xz\"",
+        "UpdateSourceArgs": "-c \"cd ./the-forest/556450/wine-x86 && tar xJf wine-9.19-staging-amd64-wow64.tar.xz --strip-components=1 && rm wine-9.19-staging-amd64-wow64.tar.xz\"",
         "SkipOnFailure": false
     },
     {
@@ -38,7 +38,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/usr/local/bin/box64",
-        "UpdateSourceArgs": "./556450/wine-x86/bin/wine64 wineboot",
+        "UpdateSourceArgs": "./the-forest/556450/wine-x86/bin/wine64 wineboot",
         "SkipOnFailure": false
     },
     {
