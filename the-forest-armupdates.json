@@ -18,11 +18,9 @@
     {
         "UpdateStageName": "Extract Wine x86_64",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceData": "./wine-x86/wine-9.19-staging-amd64-wow64.tar.xz",
-        "UpdateSourceTarget": "./wine-x86/",
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true,
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"cd wine-x86 && tar xJf wine-9.19-staging-amd64-wow64.tar.xz && rm wine-9.19-staging-amd64-wow64.tar.xz\"",
         "SkipOnFailure": false
     },
     {
