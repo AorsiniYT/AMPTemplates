@@ -1,5 +1,13 @@
 [
     {
+        "UpdateStageName": "Create Wine Directory",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"mkdir -p ./wine-x86\"",
+        "SkipOnFailure": false
+    },
+    {
         "UpdateStageName": "Download Wine x86_64",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
