@@ -12,7 +12,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://github.com/Kron4ek/Wine-Builds/releases/download/9.19/wine-9.19-staging-amd64-wow64.tar.xz",
-        "UpdateSourceTarget": "./the-forest/wine-x86/",
+        "UpdateSourceTarget": "./wine-x86/",
         "SkipOnFailure": false
     },
     {
