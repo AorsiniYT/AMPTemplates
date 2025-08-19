@@ -4,7 +4,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"mkdir -p ./wine-x86\"",
+        "UpdateSourceArgs": "-c \"mkdir -p ./the-forest/wine-x86\"",
         "SkipOnFailure": false
     },
     {
