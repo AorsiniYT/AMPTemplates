@@ -27,7 +27,7 @@ App.BaseDirectory=./the-forest/556450/
 App.ExecutableWin=556450\TheForestDedicatedServer.exe
 App.ExecutableLinux=/usr/bin/xvfb-run
 App.WorkingDir=556450
-App.LinuxCommandLineArgs=--auto-servernum --server-args='-screen 0 640x480x24:32' wine ./TheForestDedicatedServer.exe
+App.LinuxCommandLineArgs=--auto-servernum --server-args='-screen 0 640x480x24:32' FEXInterpreter wine ./TheForestDedicatedServer.exe
 App.WindowsCommandLineArgs=
 App.CommandLineArgs={{$PlatformArgs}} -showlogs -batchmode -configfilepath the-forestserver.cfg -savefolderpath saves {{$FormattedArgs}}
 App.UseLinuxIOREDIR=False
