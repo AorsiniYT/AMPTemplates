@@ -1,5 +1,4 @@
 [
-
     {
         "UpdateStageName": "SteamCMD Download",
         "UpdateSourcePlatform": "All",
@@ -9,36 +8,20 @@
         "ForceDownloadPlatform": "Windows",
         "SkipOnFailure": false
     },
-        {
-        "UpdateStageName": "Create Wine Directory",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"mkdir -p ./the-forest/556450/wine-x86\"",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Download Wine x86_64",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/Kron4ek/Wine-Builds/releases/download/9.19/wine-9.19-staging-amd64-wow64.tar.xz",
-        "UpdateSourceTarget": "./556450/wine-x86",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Extract Wine x86_64",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cd ./the-forest/556450/wine-x86 && tar xJf wine-9.19-staging-amd64-wow64.tar.xz --strip-components=1 && rm wine-9.19-staging-amd64-wow64.tar.xz\"",
-        "SkipOnFailure": false
-    },
     {
         "UpdateStageName": "Base Config Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://github.com/CubeCoders/AMPTemplates/raw/main/the-forestserver.cfg",
         "UpdateSourceTarget": "./556450/",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Initialise Wine",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"rm -rf \\\"{{$FullRootDir}}.wine\\\" >/dev/null 2>&1; WINEPREFIX=\\\"{{$FullRootDir}}.wine\\\" WINEARCH=win64 WINEDEBUG=-all /usr/bin/wineboot --init\"",
         "SkipOnFailure": false
     }
 ]
