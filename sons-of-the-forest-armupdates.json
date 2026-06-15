@@ -41,6 +41,14 @@
         "SkipOnFailure": false
     },
     {
+        "UpdateStageName": "Initialise Wine Prefix",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"rm -rf \\\"{{$FullRootDir}}.wine\\\" >/dev/null 2>&1; WINEPREFIX=\\\"{{$FullRootDir}}.wine\\\" WINEARCH=win64 WINEDEBUG=-all WINEDLLOVERRIDES=\\\"mscoree,mshtml=\\\" box64 ./sons-of-the-forest/2465200/wine-x86/bin/wine64 wineboot --init\"",
+        "SkipOnFailure": false
+    },
+    {
         "UpdateStageName": "Base Config Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
